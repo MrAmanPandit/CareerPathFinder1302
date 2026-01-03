@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #43bccd;
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    color: #06d6a0;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vw;
+
+}
+
+#heading {
+    height: 5vw;
+    background: #415a77;
+}
+
+h1 {
+    text-align: center;
+    line-height: 5vw;
+    color: #161b33;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h2 {
+    background-color: #474973;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.card-container {
+    padding: 3vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4vw;
+    min-height: 50vh;
+    overflow-y: auto;
+}
+
+.course-card {
+    padding: 2vw 1vw;
+    width: 15vw;
+    height: 15vw;
+    background-color: #141b41;
+    text-align: center;
+    text-decoration: none;
+    color: #e0e1dd;
+    font-size: 1vw;
+    border: 5px #ffbd00 groove;
+    transition: 0.1s;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 20px goldenrod;
+    transition: .2s;
+}
+
+.course-card h3 {
+    margin-bottom: 2vw;
+    padding-bottom: 1vw;
+    color: #0a58ca;
+    font-size: 1.5vw;
+    border-bottom: 3px groove black;
+}
+
+.course-card p {
+    margin: 5px 0;
+    font-size: 1vw;
+}
+
+#feedback {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: #c9ada7;
+    height: 5vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#feedback h2 {
+    padding: .5vw;
+    margin-bottom: 0;
+    font-size: 1.6vw;
+}
+
+#report {
+    max-width: 100vw;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+#report strong {
+    color: #6a040f;
+    padding-right: 4vw;
+    font-size: 1.1vw;
+}
+
+#report button {
+    width: 7vw;
+    height: 2vw;
+    transition: 0.2s;
+    border-radius: 10px;
+    color: azure;
+    border: 2px groove goldenrod;
+    background-color: #212529;
+}
+
+#report button:hover {
+    box-shadow: 0px 0px 10px green;
+    background-color: #6c757d;
+    color: azure;
+    transition: 0.2s;
+}

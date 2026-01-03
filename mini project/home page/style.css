@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #83c5be;
+}
+
+/* Header  */
+#navbar {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  border-bottom: 6px #8b8c89 groove;
+  background-color: #415a77;
+}
+
+#logo {
+  width: 30vw;
+  color: #e0e1dd;
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+  line-height: 70px;
+}
+
+#nav-link {
+  width: 70vw;
+  text-align: right;
+}
+
+#nav-link ul {
+  list-style: none;
+  line-height: 70px;
+}
+
+#nav-link ul li {
+  display: inline;
+}
+
+#nav-link ul li a {
+  width: max-content;
+  display: inline-block;
+  margin: 0 2vw;
+  color: #0d1b2a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  height: max-content;
+  transition: .5s;
+}
+
+#nav-link ul li a::after {
+  content: '';
+  position: absolute;
+  background: black;
+  height: 5px;
+  width: 0%;
+  z-index: 1;
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s;
+}
+
+#nav-link ul li a:hover::after {
+  width: 100%;
+  transition: 0.2s;
+}
+
+#nav-link ul li a:hover {
+  color: #e0e1dd;
+  transition: .5s;
+}
+
+/* Hero Section */
+#hero {
+  height: 30vw;
+  width: 100vw;
+  color: #e0e1dd;
+  background-color: #1b263b;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10vw;
+  box-sizing: border-box;
+  border-radius: 0 0 50px 50px;
+}
+
+#hero-text h1 {
+  font-size: 2.9vw;
+}
+
+#hero-text p {
+  font-size: 1.2vw;
+  color: #415a77;
+  padding: 0.7vw;
+}
+
+#hero-text a button {
+  height: 3vw;
+  width: 7vw;
+  background-color: #4a4e69;
+  color: #e0e1dd;
+  border-radius: 1.5vw;
+  transition: 0.1s;
+}
+
+#hero-text a button:hover {
+  box-shadow: 0 0 20px #f9c74f;
+  transition: 0.1s;
+  color: #43aa8b;
+}
+
+/* About Section */
+#about {
+  width: 100vw;
+  min-height: 20vw;
+
+}
+
+#heading {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 3vw 0vw;
+  color: #141b41;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.1vw;
+  padding: 0vw 10vw;
+}
+
+#features {
+  width: 100vw;
+  min-height: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4vw;
+}
+
+#about h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5vw;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+
+}
+
+.offers img {
+  height: 6vw;
+  margin: 2vw 1vw;
+  width: 6vw;
+  border: 5px #d3d4d9 groove;
+  border-radius: 50%;
+  padding: 0;
+  background-size: contain;
+}
+
+.offers {
+  height: 20vw;
+  width: 15vw;
+  background-color: #141b41;
+  text-align: center;
+  color: #e0e1dd;
+  list-style: none;
+  border: 5px #ffbd00 groove;
+}
+
+.offers li {
+  font-size: 0.9vw;
+  padding-top: 1vw;
+  color: #9ea3b0;
+}
+
+/* Stream Card Section */
+#stream {
+  width: 100vw;
+  min-height: 30vw;
+}
+
+#stream h2 {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 5vw 0vw;
+}
+
+#stream_card {
+  width: 100vw;
+  height: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stream-card img {
+  height: 7vw;
+  width: 7vw;
+  margin: 2vw 1vw;
+  border: 5px #d3d4d9 groove;
+  border-radius: 50%;
+  padding: 0;
+  background-size: cover;
+}
+
+.stream-card {
+  position: relative;
+  width: 15vw;
+  height: 17vw;
+  background-color: #141b41;
+  text-align: center;
+  text-decoration: none;
+  color: #e0e1dd;
+  font-size: 1.5vw;
+  border: 5px #ffbd00 groove;
+  transition: 0.1s;
+ 
+}
+
+.stream-card:hover {
+  box-shadow: 0 0 20px #ffbd00;
+  transition: 0.1s;
+  transform: translateY(-4px);
+  color: #09bc8a;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #415a77;
+  width: 100vw;
+  min-height: 10vw;
+  color: #e0e1dd;
+  text-align: center;
+}
+
+#footer-logo {
+  font-size: 1.6vw;
+  padding: 2vw 0vw;
+}
+
+#footer-links a {
+  margin: 1vw 2vw;
+  padding-bottom: 0.5vw;
+  box-sizing: border-box;
+  color: black;
+  transition: .2s;
+  position: relative;
+}
+
+#footer-links a:hover {
+  color: white;
+  transition: .2s;
+}
+#footer-links a::after{
+  content: '';
+  height: 5px;
+  width: 0%;
+  padding: auto;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-radius:  50px;
+  background-color: black;
+  transition: 0.2s;
+
+}
+#footer-links a:hover::after{
+  width: 100%;
+  transition: 0.2s;
+}
+#footer-copy {
+  margin-top: 2vw;
+  background-color: #83c5be;
+  color: #141b41;
+  font-size: 1vw;
+}
